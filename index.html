@@ -10,49 +10,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 </head>
 
 <body class="weather-cover">
     <div class=" container overlay">
-        <div class="wrapper mt-4">
-            <h1 class="weather-title"><strong>City Weather Now</strong></h1>
-
-            <div class="row input-location">
-                <div class="mx-auto">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="cityName" placeholder="Enter City Name..." aria-label="Enter City Name...">
-                            <span class="input-group-btn">
+        <h1 class="weather-title"><strong>City Weather Now</strong></h1>
+        <div class="row input-location">
+            <div class="mx-auto">
+                <div class="col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityName" placeholder="Enter City Name..." aria-label="Enter City Name...">
+                        <span class="input-group-btn">
                                         <button class="btn btn-info" type="button">Search!</button>
                                     </span>
-                        </div>
                     </div>
                 </div>
             </div>
-            <h4 class='leading-text text-center'></h4>
-            <div class="row mt-5">
-                <div class="col-md-4 Temperature">
-                    <h3>Temperature</h3>
-                    <span id="temperature"></span>
-                    <br>
-                <div class="units mt-3">    
-                    <span id="degC">&deg;C</span> 
+        </div>
+        <h4 class='leading-text text-center'></h4>
+        <div class="row mt-5">
+            <div class="col-md-4 Temperature">
+                <h3>Temperature</h3>
+                <span id="temperature"></span>
+                <br>
+                <div class="units mt-3">
+                    <span id="degC">&deg;C</span>
                     <span id="degF">&deg;F</span>
-                </div>    
-                </div>
-                <div class="col-md-4 weatherDescription">
-                    <h3>Description</h3>
-                    <h4 id="description"></h4>
-                </div>
-                <div class="col-md-4 Humidity">
-                    <h3>Humidity</h3>
-                    <h4 id="humidity"></h4>
                 </div>
             </div>
-
+            <div class="col-md-4 weatherDescription">
+                <h3>Description</h3>
+                <h4 id="description"></h4>
+            </div>
+            <div class="col-md-4 Humidity">
+                <h3>Humidity</h3>
+                <h4 id="humidity"></h4>
+            </div>
         </div>
+
     </div>
+    <footer>
+        <h4 class='text-center'>&copy;Paulo Genova 2017</h4>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
