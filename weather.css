@@ -54,8 +54,19 @@
         font-weight: 600;
     }
     
-    .leading-text {
-        margin-bottom: 30px;
+    #degC,
+    #degF {
+        border: 1px solid #ccc;
+        background-color: rgb(223, 216, 31);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 10px;
+    }
+    
+    #degC:hover,
+    #degF:hover {
+        cursor: pointer;
     }
     
     @media (max-width: 576px) {
