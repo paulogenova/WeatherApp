@@ -1,97 +1,111 @@
-    .weather-title {
-        text-align: center;
-        padding-top: 50px;
-        font-family: 'Pacifico';
-        font-size: 50px;
-        color: darkgoldenrod;
-    }
-    
-    .weather-cover {
-        background: url('img/weather-cover.jpg') no-repeat center center;
-        background-size: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100vh;
-    }
-    
-    .overlay {
-        background-color: #fff;
-        opacity: 0.6;
-        width: 90%;
-        height: 85%;
-        border-radius: 2%;
-        overflow: auto;
-        margin-top: 30px;
-    }
-    
-    .weatherDescription,
-    .Temperature,
-    .Humidity {
-        text-align: center;
-    }
-    
-    .input-location {
-        margin: 40px;
-    }
-    
-    h1,
-    h3 {
-        font-weight: 900;
-    }
-    
-    h4 {
-        font-weight: 600;
-        margin-top: 20px;
-    }
-    
-    #temperature,
-    #degC,
-    #degF {
-        font-size: 30px;
-        font-weight: 600;
-    }
-    
-    #degC,
-    #degF {
-        border: 1px solid #ccc;
-        background-color: rgb(223, 216, 31);
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 4px;
-        padding-right: 10px;
-    }
-    
-    #degC:hover,
-    #degF:hover {
-        cursor: pointer;
-    }
-    
-    footer {
-        color: #fff;
-    }
-    
-    @media (max-width: 576px) {
-        .overlay {
-            height: 95%;
+        .weather-title {
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Pacifico';
+            font-size: 50px;
+            color: darkgoldenrod;
         }
+        
+        .weather-cover {
+            background: url('img/weather-cover.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            max-width: 100%;
+            height: 100vh;
+        }
+        
+        .overlay {
+            background-color: #fff;
+            opacity: 0.6;
+            width: 90%;
+            height: 85%;
+            border-radius: 2%;
+            overflow: auto;
+            margin-top: 30px;
+        }
+        
+        .weatherDescription,
+        .Temperature,
+        .Humidity {
+            text-align: center;
+        }
+        
+        .input-location {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
         h1,
         h3 {
-            font-weight: 500;
-            margin-top: 10px;
-        }
-        h4 {
-            font-weight: 400;
-            margin-top: -5px;
-            font-size: 25px;
-        }
-        #temperature,
-        #degC,
-        #degF {
-            font-size: 28px;
             font-weight: 900;
         }
         
-        footer{
-            display: none;
+        h4 {
+            font-weight: 700;
+            margin-top: 20px;
         }
-    }
+        
+        #temperature,
+        #degC,
+        #degF {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        #degC,
+        #degF {
+            border: 1px solid #ccc;
+            background-color: rgb(223, 216, 31);
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            padding-right: 10px;
+        }
+        
+        #degC:hover,
+        #degF:hover {
+            cursor: pointer;
+        }
+        
+        footer {
+            color: #fff;
+        }
+        
+        @media (max-width: 575px) {
+            .overlay {
+                height: 95%;
+            }
+            h1,
+            h3 {
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            h4 {
+                font-weight: 600;
+                margin-top: -5px;
+                font-size: 25px;
+            }
+            #temperature,
+            #degC,
+            #degF {
+                font-size: 28px;
+                font-weight: 700;
+            }
+            footer {
+                display: none;
+            }
+        }
+        
+        @media (min-width: 576px) and (max-width: 767px) {
+            .overlay {
+                height: 93%;
+                
+            }
+            
+            h3 {
+                margin-top: 20px;
+            }
+            h4 {
+                margin-top: -5px;
+            }
+        }
